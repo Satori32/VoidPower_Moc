@@ -9,8 +9,20 @@ struct Object {
 	T Empty;
 };
 
-typedef void* Void;
-typedef void* NULLT;
+struct Void{
+	//type T = void;
+	typedef void* T;
+	T V;
+};
+
+struct Null {
+	//type T = NULL:
+	typedef void* T;
+	T N;
+};
+
+//typedef void* Void;
+//typedef void* NULLT;
 struct Bit {
 	intmax_t B;
 };
@@ -38,7 +50,7 @@ bool PushV(NULLOBJECT& N, Void V) {
 	Bit B;
 	return B.B;
 }
-bool PushN(NULLOBJECT& N, NULLT NO) {
+bool PushN(NULLOBJECT& N, Null NO) {
 	Bit B;
 	return B.B;
 }
