@@ -83,3 +83,15 @@ bool Suffle(VoidBox& V) {
 	}
 	return true;
 }
+
+template <class R>
+bool Initialize(VoidBox& In, R(*F)(VoidBox&, NULLOBJECT)) {
+	return false;
+}
+
+bool Update(VoidBox& V) {
+	if (IsEmpty(V)) { return false; }
+	Suffle(V);
+
+	return true;
+}
