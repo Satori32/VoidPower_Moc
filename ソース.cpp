@@ -34,11 +34,19 @@ void* HandDiveIn(NULLOBJECT& In) {//if end search. dive out to hand
 	return P;
 }
 
-bool Push(NULLOBJECT& N, Void V) {
+bool PushV(NULLOBJECT& N, Void V) {
 	Bit B;
 	return B.B;
 }
-
+bool PushN(NULLOBJECT& N, NULLOBJECT NO) {
+	Bit B;
+	return B.B;
+}
+template<class T>
+bool Push(NULLOBJECT& N, T& B) {
+	Bit B;
+	return B.B;
+}
 struct VoidBox {
 	Vector<NULLOBJECT> Objects;
 };
