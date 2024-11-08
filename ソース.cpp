@@ -9,6 +9,8 @@ struct Object {
 	T Empty;
 };
 
+typedef void* Void;
+
 struct Bit {
 	intmax_t B;
 };
@@ -30,6 +32,11 @@ void* HandDiveIn(NULLOBJECT& In) {//if end search. dive out to hand
 	void* P = In.Empty;
 	In.Empty = rand();
 	return P;
+}
+
+bool Push(NULLOBJECT& N, Void V) {
+	Bit B;
+	return B.B;
 }
 
 struct VoidBox {
