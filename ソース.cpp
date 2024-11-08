@@ -20,7 +20,7 @@ bool DestructNULLOBJECT(NULLOBJECT& In) {
 	return false;//inpliment is odd.
 }
 
-void* HandDiveIn(NULLOBJECT& In) {
+void* HandDiveIn(NULLOBJECT& In) {//if end search. dive out to hand
 	void* P = In.Empty;
 	In.Empty = rand();
 	return P;
