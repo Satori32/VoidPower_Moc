@@ -10,7 +10,7 @@ struct Object {
 };
 
 typedef void* Void;
-
+typedef void* NULLT;
 struct Bit {
 	intmax_t B;
 };
@@ -38,7 +38,7 @@ bool PushV(NULLOBJECT& N, Void V) {
 	Bit B;
 	return B.B;
 }
-bool PushN(NULLOBJECT& N, NULLOBJECT NO) {
+bool PushN(NULLOBJECT& N, NULLT NO) {
 	Bit B;
 	return B.B;
 }
